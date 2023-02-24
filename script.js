@@ -1,27 +1,3 @@
-const startButton = document.getElementById('start');
-const resultChildren = document.querySelectorAll('.result-table > div');
-let valuesBlocks = [];
-const expensesItemInputs = document.querySelectorAll('input[class=expenses-item]');
-const expensesItemButton = document.getElementsByClassName('expenses-item-btn');
-const optionalExpensesButton = document.getElementsByClassName('optionalexpenses-btn');
-const countBudgetButton = document.getElementsByClassName('count-budget-btn');
-const optionalExpensesInputs = document.querySelectorAll('.optionalexpenses-item');
-const chooseIncomeInput = document.querySelector('.choose-income');
-const savingsCheckbox = document.getElementById('savings');
-const sumInput = document.getElementById('sum');
-const percentInput = document.getElementById('percent');
-const yearValueInput = document.querySelector('input[class=year-value]');
-const monthValueInput = document.querySelector('input[class=month-value]');
-const dayValueInput = document.querySelector('input[class=day-value]');
-
-resultChildren.forEach(function(div, i, resultChildren) {
-  if (resultChildren[i].className.includes('-value')) {
-    valuesBlocks.push(div);
-  }
-})
-
-
-
 const daysInMonth = 30;
 
 const startButton = document.getElementById('start');
@@ -40,7 +16,6 @@ const yearValueInput = document.querySelector('input[class=year-value]');
 const monthValueInput = document.querySelector('input[class=month-value]');
 const dayValueInput = document.querySelector('input[class=day-value]');
 const secondaryButtons = document.querySelectorAll('button:not([id=start])');
-
 const budgetValue = document.querySelector('.budget-value');
 const expensesValue = document.querySelector('.expenses-value');
 const optionalexpensesValue = document.querySelector('.optionalexpenses-value');
